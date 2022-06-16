@@ -91,3 +91,52 @@ footer {
   font-size: 18px;
   font-weight: bold;
 }
+
+.suggestion {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  margin-top: 40px;
+  /* justify-content: center; */
+}
+
+.suggestion:before, .suggestion:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid rgb(230, 228, 228);
+  margin: auto;
+}
+
+/* CAROUSEL & CARDS */
+.card {
+  width: auto;
+  height: 200px;
+  background-color: #333;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  margin: 50px 0;
+}
+
+.rec.rec-carousel-wrapper .rec-carousel button {
+  color: rgb(230, 228, 228);
+  background-color: white;
+  box-shadow: none;
+}
+
+.rec.rec-carousel-wrapper .rec-pagination .rec.rec-dot.rec {
+  box-shadow: none;
+  background: rgb(230, 228, 228);
+}
+
+.rec.rec-carousel-wrapper .rec-pagination .rec.rec-dot.rec.rec-dot_active {
+  background: rgb(80, 71, 71);
+}

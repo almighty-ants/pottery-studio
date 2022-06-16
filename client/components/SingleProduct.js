@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchSingleProduct } from '../store/singleProduct';
+import CarouselCards from './Carousel'
 
 class SingleProduct extends React.Component {
 
@@ -9,7 +10,7 @@ class SingleProduct extends React.Component {
   }
 
   render() {
-    const { title, price, type, quantity, colour, imgUrl} = this.props.product
+    const { id, title, price, type, quantity, colour, imgUrl} = this.props.product
 
     const description = this.props.product.description || "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia recusandae illo assumenda eos quos fuga non officia odio, minus asperiores cumque perspiciatis, in debitis ipsum consectetur nemo harum eum enim!";
 
@@ -26,11 +27,11 @@ class SingleProduct extends React.Component {
             <p className="price">${price}</p>
 
             <div className="quantity">
-              <label for="quantity">QUANTITY:</label>
+              <label htmlFor="quantity">QUANTITY:</label>
               <input type="number" id="quantity" name="quantity" min="0" style={{width: '60px', height: 'auto'}}></input>
             </div>
 
-            <button class="btn btn-dark">ADD TO CART <i class="bi bi-cart"></i></button>
+            <button className="btn btn-dark">ADD TO CART <i className="bi bi-cart"></i></button>
 
             <div className="description">
               <p><span>Type: </span>{type}</p>
@@ -41,8 +42,8 @@ class SingleProduct extends React.Component {
           </div>
 
         </div>
-
-
+        <h2 className="suggestion">You May Also Like</h2>
+        <CarouselCards currentId={id}/>
       </div>
     )
 
