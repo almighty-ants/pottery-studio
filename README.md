@@ -1,3 +1,3 @@
 # Pottery Studio
 
-add things here later...
+
