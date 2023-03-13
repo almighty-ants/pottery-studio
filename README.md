@@ -4,7 +4,7 @@ Pottery studio is an e-commerce site built using React, Redux, Node.js, Express,
 
 ## Website Demo
 
-You can visit and demo the site here: https://pottery-studio.onrender.com
+You can visit and demo the site here: https://pottery-studio.vercel.app/
 
 1. Home page > Shop view > Single view > Add to cart
 2. Login > Cart is persistent > Edit cart
